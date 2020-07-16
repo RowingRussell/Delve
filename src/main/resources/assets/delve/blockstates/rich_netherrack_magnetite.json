@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "delve:rich_netherrack_magnetite" }
+    }
+}

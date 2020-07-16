@@ -1,0 +1,13 @@
+{
+	"parent": "block/orientable",
+	"textures":
+	{
+		"particle": "delve:enchanter/enchanter_front_off",
+		"up": "delve:enchanter/enchanter_front_off",
+		"down": "delve:enchanter/enchanter_front_off",
+		"north": "delve:enchanter/enchanter_front_off",
+		"east": "delve:enchanter/enchanter_side",
+		"south": "delve:enchanter/enchanter_side",
+		"west": "delve:enchanter/enchanter_side",
+	}
+}

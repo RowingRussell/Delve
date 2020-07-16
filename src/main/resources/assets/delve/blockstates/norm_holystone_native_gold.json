@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "delve:norm_holystone_native_gold" }
+    }
+}

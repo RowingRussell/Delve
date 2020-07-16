@@ -1,0 +1,13 @@
+{
+	"variants":
+	{
+		"enchanting=false,facing=north": { "model": "delve:enchanter" },
+		"enchanting=false,facing=east": { "model": "delve:enchanter", "y": 90 },
+		"enchanting=false,facing=south": { "model": "delve:enchanter", "y": 180 },
+		"enchanting=false,facing=west": { "model": "delve:enchanter", "y": 270 },
+		"enchanting=true,facing=north": { "model": "delve:enchanter_on" },
+		"enchanting=true,facing=east": { "model": "delve:enchanter_on", "y": 90 },
+		"enchanting=true,facing=south": { "model": "delve:enchanter_on", "y": 180 },
+		"enchanting=true,facing=west": { "model": "delve:enchanter_on", "y": 270 },
+	}
+}
