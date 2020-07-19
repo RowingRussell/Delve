@@ -143,9 +143,9 @@ public class TileEntityEnchanter extends TileEntity implements IInventory, ITick
 			
 			if(this.isBurning() || !stack.isEmpty() && 
 					! ((((ItemStack)this.inventory.get(1)).isEmpty()) 
-					&& (((ItemStack)this.inventory.get(2)).isEmpty()))
-					&& (((ItemStack)this.inventory.get(3)).isEmpty()) 
-					&& (((ItemStack)this.inventory.get(4)).isEmpty())) 
+					|| (((ItemStack)this.inventory.get(2)).isEmpty()))
+					|| (((ItemStack)this.inventory.get(3)).isEmpty()) 
+					|| (((ItemStack)this.inventory.get(4)).isEmpty())) 
 			{	
 				if(!this.isBurning() && this.canSmelt()) {
 					this.burnTime = getItemBurnTime(stack);
@@ -194,13 +194,17 @@ public class TileEntityEnchanter extends TileEntity implements IInventory, ITick
 	}
 	
 	//Prolly Importante
-	private boolean canSmelt() {
+	private boolean canSmelt() 
+	{
 		if(((ItemStack)this.inventory.get(1)).isEmpty() 
 		|| ((ItemStack)this.inventory.get(2)).isEmpty() 
 		|| ((ItemStack)this.inventory.get(3)).isEmpty() 
-		|| ((ItemStack)this.inventory.get(4)).isEmpty()) return false;
+		|| ((ItemStack)this.inventory.get(4)).isEmpty()) return false; 
 		else 
 		{
+
+			System.out.println("getEnchantingResult called");
+			
 			ItemStack result = EnchanterRecipes.getInstance().getEnchantingResult((ItemStack)this.inventory.get(1), 
 																				  (ItemStack)this.inventory.get(2), 
 																				  (ItemStack)this.inventory.get(3), 
